@@ -1,3 +1,13 @@
+@import url('../button/button.css');
+@import url('../main-header/main-header.css');
+@import url('../main-content/main-content.css');
+@import url('../main-content/advantages/advantages.css');
+@import url('../main-content/appointment/appointment.css');
+@import url('../main-content/contacts/contacts.css');
+@import url('../main-content/gallery/gallery.css');
+@import url('../main-content/news/news.css');
+@import url('../main-footer/main-footer.css');
+
 @font-face {
     font-family: "PT Sans Narrow";
     src: url("../../../template/fonts/web/ptsansnarrow.woff2") format("woff2");
@@ -32,3 +42,4 @@ a {
     margin: 0;
     padding: 0;
 }
+
