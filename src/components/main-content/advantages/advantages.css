@@ -1,0 +1,37 @@
+
+.advantages--color {
+    color: white;
+}
+
+.advantages--size {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advantages__item {
+    text-align: center;
+    width: 291px;
+}
+
+.advantages__header {
+    position: relative;
+    margin-bottom: 77px;
+}
+
+.advantages__header::after {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+    left: 135px;
+    top: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.advantages__header--size {
+    font-size: 30px;
+    line-height: 42px;
+}
+

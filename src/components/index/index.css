@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../../../template/fonts/web/ptsansnarrow.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url("../../../template/fonts/web/ptsansnarrowbold.woff2") format("woff2");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url("../../images/Layer.png");
+    background-repeat: no-repeat;
+    background-position: center, top;
+    font-family: "PT Sans Narrow Bold",sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}

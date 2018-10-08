@@ -1,0 +1,20 @@
+.button {
+    color: white;
+    background-color: black;
+    border-color: black;
+    font: 14px "PT Sans Narrow Bold", sans-serif;
+}
+
+.button:hover {
+    background-color: #663d15;
+}
+
+.button--size-s {
+    width: 140px;
+    height: 44px;
+}
+
+.button--size-m {
+    width: 300px;
+    height: 43px;
+}

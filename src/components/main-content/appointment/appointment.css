@@ -1,0 +1,41 @@
+.appointment {
+    box-sizing: border-box;
+    margin-left: 90px;
+    width: 300px;
+}
+
+.appointment__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.appointment__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}
+
+.appointment__input {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 43px;
+    border: 2px solid black;
+    font: 14px "PT Sans Narrow Bold",sans-serif;
+    padding-left: 15px;
+}
+
+.appointment__input:focus {
+    border-color: #663d15;
+    outline: none;
+}
+
+.appointment__label {
+    padding-left: 15px;
+}
+
+.appointment__button {
+    margin-top: 20px;
+}
