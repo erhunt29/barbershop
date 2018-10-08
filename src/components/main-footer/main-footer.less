@@ -1,0 +1,95 @@
+.main-footer {
+  height: 193px;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  background-image: url("../../images/Layer 23.png");
+}
+
+.main-footer__wrapper {
+  padding-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  width: @container-width;
+  margin: 0 auto;
+}
+@footer-flex-el-width:310px;
+
+.main-footer__location {
+  width: @footer-flex-el-width;
+}
+
+.main-footer__how-search-us {
+  text-decoration: underline;
+}
+
+.main-footer__social {
+  width: @footer-flex-el-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__social-list {
+  display: flex;
+}
+
+.main-footer__social-list-item {
+  width: 43px;
+  height: 43px;
+  margin-top: 10px;
+  margin-right: 6px;
+  background: black;
+  background-repeat: no-repeat;
+  background-position: center,center;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+
+.main-footer__social-list-item--vkontakte {
+  background-image: url("../../images/vk.svg");
+
+  &:hover {
+    background-image: url("../../images/vk-black.svg");
+  }
+}
+
+.main-footer__social-list-item--instagram {
+  background-image: url("../../images/instagram.svg");
+  &:hover {
+    background-image: url("../../images/instagram-black.svg");
+  }
+}
+
+.main-footer__social-list-item--facebook {
+  background-image: url("../../images/facebook.svg");
+
+  &:hover {
+    background-image: url("../../images/facebook-black.svg");
+  }
+}
+
+
+.main-footer__developers {
+  width: @footer-flex-el-width;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-footer__span {
+  text-align: center;
+  width: 140px;
+}
+
+.main-footer__button {
+  margin-top: 10px;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+}
