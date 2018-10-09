@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+    <link rel="stylesheet/less" type="text/css" href="shop.less">
+    <script src="../../less/less.min.js" ></script>
+</head>
+<body>
+<header class="main-header main-header__main-content-price">
+    <div class="main-header__nav">
+        <ul class="main-header__list">
+            <li class="main-header__logo main-header__logo--order-false">
+                <a class="main-header__item main-header__item--color main-header__item--size" href="../../../index.html">
+                    <img  src="../../images/logo.svg" alt="logo">
+                </a>
+            </li>
+            <li><a class="main-header__item main-header__item--color main-header__item--size" href="">ИНФОРМАЦИЯ</a></li>
+            <li><a class="main-header__item main-header__item--color main-header__item--size" href="">НОВОСТИ</a></li>
+            <li><a class="main-header__item main-header__item--active main-header__item--color main-header__item--size" href="../price/price.html">ПРАЙС-ЛИСТ</a></li>
+            <li><a  class="main-header__item main-header__item--color main-header__item--size" href="#">
+                 <span class="main-header__span main-header__span--active">МАГАЗИН</span>
+            </a>
+            </li>
+            <li><a class="main-header__item main-header__item--color main-header__item--size" href="">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="main-header__list">
+            <li >
+                <a class="main-header__login main-header__item main-header__item--size" href="">
+                    ВХОД
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="main-content main-content--theme-price">
+    <h2 class="main-content__header main-content__header--theme-price">СРЕДСТВА ДЛЯ УХОДА</h2>
+    <div class="main-content__path">
+        <span class="main-content__paragraph main-content__path-one ">ГЛАВНАЯ</span>
+        <span class="main-content__paragraph main-content__path-one ">МАГАЗИН</span>
+        <span class="main-content__paragraph  main-content__path-two ">СРЕДСТВА ДЛЯ УХОДА</span>
+    </div>
+    <div class="main-content__wrap main-content__wrap--theme-shop">
+        <div class="filter main-content__filter">
+            <h2 class="main-content__header--size-s">ПРОИЗВОДИТЕЛИ:</h2>
+            <ul class="filter__manufacturers">
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-1" type="checkbox" class="filter__checkbox">
+                    <label for="manufacturer-1" class="filter__label">Baxter of California</label>
+                </li>
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-2" type="checkbox" class="filter__checkbox">
+                    <label for="manufacturer-2"class="filter__label">Mr Natty</label>
+                </li>
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-3" type="checkbox" class="filter__checkbox">
+                    <label for="manufacturer-3" class="filter__label">Suavecito</label>
+                </li>
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-4" type="checkbox" class="filter__checkbox">
+                    <label  for="manufacturer-4" class="filter__label">Malin+Goetz</label>
+                </li>
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-5" type="checkbox" class="filter__checkbox">
+                    <label for="manufacturer-5" class="filter__label">Murray’s</label>
+                </li>
+                <li class="filter__item filter__item--checkbox main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__checkbox-indicator"></span>
+                    <input id="manufacturer-6" type="checkbox" class="filter__checkbox">
+                    <label for="manufacturer-6" class="filter__label">American Crew</label>
+                </li>
+            </ul>
+            <h2 class="main-content__header--size-s">ГРУППЫ ТОВАРОВ:</h2>
+            <ul class="filter__group-of-goods">
+                <li class="filter__item filter__item--radio  main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__radio-indicator"></span>
+                    <input id="group-1" name="group" type="radio" class="filter__radio">
+                    <label for="group-1" class="filter__label">Бритвенные <br> принадлежности</label>
+                </li>
+                <li class="filter__item filter__item--radio  main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__radio-indicator"></span>
+                    <input id="group-2" name="group" type="radio" class="filter__radio">
+                    <label for="group-2" class="filter__label">Средства для ухода</label>
+                </li>
+                <li class="filter__item filter__item--radio  main-content__paragraph main-content__paragraph--size-s">
+                    <span class="filter__radio-indicator"></span>
+                    <input id="group-3" name="group" type="radio" class="filter__radio">
+                    <label for="group-3" class="filter__label">Аксессуары</label>
+                </li>
+            </ul>
+            <button class="button button--size-extra-s filter__button">ПОКАЗАТЬ</button>
+        </div>
+        <div class="goods main-content__goods">
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good1.png" alt="">
+                <span class="goods__purpose">Набор для путешествий</span><br>
+                <span class="goods__manufacture">«Baxter of California»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">2900 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good2.png" alt="">
+                <span class="goods__purpose">Увлажняющий кондиционер</span><br>
+                <span class="goods__manufacture">«Baxter of California»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">750 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good3.png" alt="">
+                <span class="goods__purpose">Гель для волос</span><br>
+                <span class="goods__manufacture">«SUAVECITO»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">290 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good4.png" alt="">
+                <span class="goods__purpose">Глина для укладки волос</span><br>
+                <span class="goods__manufacture"> «American crew»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">500 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good5.png" alt="">
+                <span class="goods__purpose">Гель для волос</span><br>
+                <span class="goods__manufacture">«AMERICAN CREW»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">300 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="goods__good">
+                <img class="goods__image" src="../../images/good6.png" alt="">
+                <span class="goods__purpose">Набор для бритья</span><br>
+                <span class="goods__manufacture">«Baxter of California»</span><br>
+                <div class="goods__wrapper">
+                    <div class="goods__price">3900 Р</div>
+                    <button class="button button--size-buy">КУПИТЬ</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-content__select-page">
+        <button class="button button--size-select-page">1</button>
+        <button class="button button--size-select-page button--disable">2</button>
+        <button class="button button--size-select-page">3</button>
+        <button class="button button--size-select-page">4</button>
+    </div>
+</main>
+<footer class="main-footer">
+    <div class="main-footer__wrapper">
+        <div class="main-footer__location">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            <a  class="main-footer__how-search-us" href=""> КАК НАС НАЙТИ?</a><br>
+            ТЕЛЕФОН: +7 (495) 666-02-66<br>
+        </div>
+        <div class="main-footer__social">
+            <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
+            <ul class="main-footer__social-list">
+                <li class="main-footer__social-list-item main-footer__social-list-item--vkontakte"></li>
+                <li class="main-footer__social-list-item main-footer__social-list-item--facebook"></li>
+                <li class="main-footer__social-list-item main-footer__social-list-item--instagram"></li>
+            </ul>
+        </div>
+        <div class="main-footer__developers">
+            <span class="main-footer__span">РАЗАРБОТАНО:</span>
+            <button class="button button--size-s main-footer__button">HTML ACADEMY</button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
