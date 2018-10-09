@@ -1,6 +1,13 @@
 .main-content {
-  width: @container-width;
+  width: @container-width + 260px;
   margin: 0 auto;
+}
+
+.main-content--theme-price {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 25px 130px;
+  text-transform: uppercase ;
 }
 
 .main-content__advantages {
@@ -13,6 +20,45 @@
   line-height: 42px;
   margin-bottom: 16px;
 }
+.main-content__header--theme-price {
+  margin-top: 55px;
+  margin-bottom: 32px;
+
+}
+.main-content__header--size-l {
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 61px;
+  margin-bottom: 76px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 570px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: black;
+    top: 24px;
+    left: -186px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: black;
+    top: 24px;
+    left: calc(100% + 26px);
+  }
+}
+
+.main-content__header--size-s {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
 
 .main-content__wrap {
   display: flex;
@@ -23,6 +69,13 @@
   background-image: url("@{image}/vertical-line.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-content__wrap--theme-price {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: none;
+  height: auto;
 }
 
 
@@ -37,8 +90,71 @@
   line-height: 24px;
 }
 
+
 .main-content__item {
   box-sizing: border-box;
   padding-top: 48px;
   width: 470px;
+}
+.main-content__item--theme-price {
+  width: 460px;
+  padding-top: 0;
+  margin-bottom: 50px;
+
+}
+
+.main-content__li {
+  position: relative;
+  padding-left: 21px;
+  margin-bottom: 14px;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    left: 0;
+    top: 6px;
+  }
+}
+
+.main-content__table {
+  width: 460px;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+.main-content__row {
+  border: 2px solid black;
+  height: 43px;
+}
+
+.main-content__col-one {
+  border: 2px solid black;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.main-content__col-two {
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+}
+.main-content__path-one {
+  margin-right: 40px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    left: calc(100% + 18px);
+    top: 5px;
+  }
+}
+
+.main-content__path-two {
+  color: #aba9a7;
 }
